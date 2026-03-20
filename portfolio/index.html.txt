@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT NEXUS — Головне меню</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+        
+        body {
+            background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .glass {
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .title {
+            font-family: 'Press Start 2P', system-ui;
+            text-shadow: 
+                0 0 10px #ffd700,
+                0 0 20px #ffd700,
+                0 0 40px #ff00aa;
+            letter-spacing: 8px;
+        }
+        
+        .menu-link {
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .menu-link:hover {
+            transform: translateX(20px) scale(1.08);
+            text-shadow: 0 0 25px #ffd700;
+        }
+        
+        .checkmark {
+            animation: checkPop 0.6s ease forwards;
+        }
+        
+        @keyframes checkPop {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.4); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center text-white">
+    <div class="glass max-w-3xl w-full mx-6 p-12 rounded-3xl shadow-2xl">
+        <!-- Стилізована назва проєкту -->
+        <div class="text-center mb-16">
+            <h1 class="title text-6xl md:text-7xl tracking-[12px] text-yellow-300 mb-2">PROJECT</h1>
+            <h1 class="title text-6xl md:text-7xl tracking-[12px] text-pink-400 -mt-6">NEXUS</h1>
+            <p class="text-xl text-yellow-200 mt-4 font-mono tracking-widest">Об’єднує всі мої роботи</p>
+        </div>
+
+        <!-- Меню -->
+        <div class="space-y-8">
+            <a href="dragonage.html" class="menu-link flex items-center gap-6 group text-3xl font-medium">
+                <span class="checkmark text-4xl text-emerald-400">✓</span>
+                <span class="group-hover:text-emerald-300 transition-colors">Dragon Age</span>
+            </a>
+            
+            <a href="music.html" class="menu-link flex items-center gap-6 group text-3xl font-medium">
+                <span class="checkmark text-4xl text-emerald-400">✓</span>
+                <span class="group-hover:text-emerald-300 transition-colors">Music</span>
+            </a>
+            
+            <a href="travel.html" class="menu-link flex items-center gap-6 group text-3xl font-medium">
+                <span class="checkmark text-4xl text-emerald-400">✓</span>
+                <span class="group-hover:text-emerald-300 transition-colors">Travel</span>
+            </a>
+            
+            <a href="art.html" class="menu-link flex items-center gap-6 group text-3xl font-medium">
+                <span class="checkmark text-4xl text-emerald-400">✓</span>
+                <span class="group-hover:text-emerald-300 transition-colors">Art (CSS)</span>
+            </a>
+            
+            <a href="about.html" class="menu-link flex items-center gap-6 group text-3xl font-medium">
+                <span class="checkmark text-4xl text-emerald-400">✓</span>
+                <span class="group-hover:text-emerald-300 transition-colors">About Me</span>
+            </a>
+        </div>
+
+        <div class="mt-16 text-center text-sm font-mono text-yellow-200/70">
+            Клікніть на пункт меню • Усі сторінки пов’язані гіперпосиланнями
+        </div>
+    </div>
+
+    <script>
+        // Ініціалізація Tailwind (необов’язково)
+        tailwind.config = {
+            content: ["*"],
+            theme: { extend: {} }
+        }
+    </script>
+</body>
+</html>

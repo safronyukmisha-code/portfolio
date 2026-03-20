@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen">
+    <div class="max-w-4xl mx-auto p-8">
+        <a href="index.html" class="text-yellow-400 hover:text-yellow-300 mb-8 inline-block">← На головну</a>
+        <h1 class="text-5xl font-bold text-sky-400 mb-10">Мої подорожі</h1>
+        
+        <div class="space-y-16">
+            <article>
+                <h2 class="text-3xl">Київ — Львів (2024)</h2>
+                <p class="mt-4 text-lg">Найкращі моменти: старовинні вулиці, кава в центрі, нічне небо над Львівською ратушею...</p>
+            </article>
+            <article>
+                <h2 class="text-3xl">Карпати — Яремче (2025)</h2>
+                <p class="mt-4 text-lg">Гори, водоспади, гуцульська кухня. Найкраща подорож року!</p>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
