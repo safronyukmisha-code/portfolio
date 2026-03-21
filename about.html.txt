@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen flex items-center">
+    <div class="max-w-2xl mx-auto p-12 text-center">
+        <a href="index.html" class="text-yellow-400 hover:text-yellow-300 mb-12 inline-block">← На головну</a>
+        
+        <h1 class="text-6xl font-bold mb-8">Михайло</h1>
+        <p class="text-2xl mb-6">Студент з Харкова, Україна 🇺🇦</p>
+        <p class="text-xl max-w-md mx-auto mb-12">
+            Хочю поехать в Японию на обучение. 
+            Давайте интересный факт: лепестки сакуры падают со скоростю 5 сантиметров в секунду.
+        </p>
+        
+        <div class="space-y-4 text-lg">
+            <p>📧 Email: <span class="text-yellow-300">safronyuk.misha@gmail.com</span> </p>
+            <p>📍 Харків, Україна</p>
+            <p>📱 Telegram: @Kartopovich </p>
+        </div>
+    </div>
+</body>
+</html>
